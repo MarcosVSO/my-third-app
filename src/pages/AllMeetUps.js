@@ -7,7 +7,7 @@ function AllMeetUpsPage() {
 
   async function loadMeetups(){
     const jsonData = 
-    await fetch('https://react-getting-started-6e72f-default-rtdb.firebaseio.com/meetups.json')
+    await fetch('https://fide-databse-default-rtdb.firebaseio.com/ocorrencias.json')
     .then((response) => response.json())
     console.log(jsonData);
   }
@@ -17,7 +17,7 @@ function AllMeetUpsPage() {
     setIsLoading(true);
     loadMeetups();
     fetch(
-      "https://react-getting-started-6e72f-default-rtdb.firebaseio.com/meetups.json"
+      "https://fide-databse-default-rtdb.firebaseio.com/ocorrencias.json"
     )
       .then((response) => {
         return response.json();
